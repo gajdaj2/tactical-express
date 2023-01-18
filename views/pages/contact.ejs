@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+     <title>Contact</title>
+     <meta charset="utf-8">
+     <meta name = "format-detection" content = "telephone=no" />
+     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/form.css">
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.2.1.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+	 <script src="js/script.js"></script>   
+     <script src="js/jquery.equalheights.js"></script>
+     <script src="js/jquery.ui.totop.js"></script>
+     <script src="js/superfish.js"></script>
+     <script src="js/jquery.mobilemenu.js"></script>
+     <script src="js/TMForm.js"></script> 
+     <!--[if (gt IE 9)|!(IE)]><!-->
+     <script src="js/jquery.mobile.customized.min.js"></script>
+     <!--<![endif]-->
+     <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script src="js/html5shiv.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+        <script>
+            $(document).ready(function(){
+                /*Back to Top*/
+                $().UItoTop({ easingType: 'easeOutQuart' });
+             });
+        </script>
+     </head>
+
+<body id="top">
+
+<!--========================header=============================-->
+<div class="box">
+    <header id="header">
+    <div class="container">
+    <div class="row">
+        <div class="grid_4">
+            <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+        </div>
+        <div class="grid_8">
+            <nav>
+                <ul class="sf-menu">
+                    <li><a href="/">Home</a>
+                        <ul>
+                            <li><a href="#">Events Schedule</a></li>
+                            <li><a href="#">Hunting</a></li>
+                            <li><a href="#">Firearms</a>
+                                <ul>
+                                    <li><a href="#">Latest</a></li>
+                                    <li><a href="#">Archive</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Training</a></li>
+                            <li><a href="#">Membership</a></li>
+                            <li><a href="#">Contacts</a></li>
+                       </ul>
+                    </li>
+                    <li><a href="/about">O nas</a></li>
+                    <li><a href="/services">Usługi</a></li>
+                    <li><a href="/piro">PiRO</a></li>
+                    <li><a href="/competitions">Zawody</a></li>
+                    <li><a href="/ma">Martial Arts</a></li>
+                    <li class="current"><a href="/contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </div>
+    </header>
+    <div class="clear"></div>
+
+<!--===================content===========================-->
+
+    <div class="container">
+        <div class="divider1"></div>
+        <div class="row">
+        <div class="grid_8">
+        <h3>How to Find Us</h3>
+            <div class="grid_5 alpha">        
+               <div class="map">
+                <figure>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2318.8791052823535!2d18.5353521!3d54.4650697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fda0886257d1e1%3A0x1eba6b02c3d9d4ed!2sStrzelnica%20Playground!5e0!3m2!1spl!2spl!4v1673977445874!5m2!1spl!2spl" width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </figure>
+                </div>
+            </div>
+            <div class="grid_3 omega">
+            <div class="add">
+            <h4>Tactical Bushido</h4>
+                <address>
+                    <dl>
+                    <dt>
+                        <span>Adres szkoleń: </span>
+                        <br>
+                        <span>Bernadowska 24</span><br><span>81-553 Gdynia</span>
+                    </dt>
+
+                    <dt>
+                        <span>Adres działalności:</span>
+                        <br>
+                        <span>Grodzka 1/7</span><br><span>76-200 Słupsk</span>
+                    </dt>
+
+                        <dd><span>Mobile: </span>+48 504 644 934</dd>
+                    </dl>
+                    <span>E-mail:&nbsp;</span><a href="#">info@tacticalbushido.com</a> <br>
+                    <span>Facebook: </span> <br><a href="https://www.facebook.com/TacticalBushido/">Facebook</a> <br>
+                    <span>Instagram: </span> <br> <a href="https://www.instagram.com/tacticalbushido/">Instagram</a>
+                </address>
+              </div>
+            </div>
+            </div>
+            <div class="grid_4">
+            <h3>Contact Form</h3>
+                <form id="form">             
+                    <div class="success_wrapper">
+                        <div class="success-message">Contact form submitted</div>
+                    </div>
+                    <label class="name">
+                        <input type="text" placeholder="Name:" data-constraints="@Required @JustLetters" />
+                        <span class="empty-message">*This field is required.</span>
+                        <span class="error-message">*This is not a valid name.</span>
+                    </label>                  
+                    <label class="email">
+                        <input type="text" placeholder="E-mail:" data-constraints="@Required @Email" />
+                        <span class="empty-message">*This field is required.</span>
+                        <span class="error-message">*This is not a valid email.</span>
+                    </label>
+                    <label class="phone">
+                        <input type="text" placeholder="Phone:" data-constraints="@Required @JustNumbers"/>
+                        <span class="empty-message">*This field is required.</span>
+                        <span class="error-message">*This is not a valid phone.</span>
+                    </label>
+                    <label class="message">
+                        <textarea placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                        <span class="empty-message">*This field is required.</span>
+                        <span class="error-message">*The message is too short.</span>
+                    </label>
+                    <div class="clear"></div>
+                    <div class="btns"> 
+                        <a class="link1" href="#" data-type="reset">Clear</a>    
+                        <a class="link1" href="#" data-type="submit">Send</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="divider2"></div>
+    </div>
+
+<!--=====================footer=========================-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="grid_3 fright">
+                    <ul class="list1">
+                        <li><a href="#">Events Schedule</a></li>
+                        <li><a href="#">Hunting</a></li>
+                        <li><a href="#">Firearms</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Contacts </a></li>
+                    </ul>
+                </div>
+                <div class="grid_3 fright">
+                    <ul class="list1">
+                        <li><a href="#">google plus</a></li>
+                        <li><a href="#">flickr</a></li>
+                        <li><a href="#">Dribble</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Skype</a></li>
+                    </ul>
+                </div> 
+                 <div class="grid_6 fleft">
+                    <h1><a href="index.html"><img class="logo2" src="images/logo2.png" alt="" width="10%" height="10%"></a></h1>
+                    <div class="copy"><span>Tactical Bushido&nbsp;&nbsp;&bull;&nbsp;&nbsp;&copy;</span>&nbsp;&nbsp;<span id="copyright-year"></span>&nbsp;&nbsp;&bull;
+                    <a href="index-6.html">Privacy Policy</a> </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
