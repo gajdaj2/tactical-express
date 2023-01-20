@@ -1,0 +1,255 @@
+
+nav>.sf-menu {
+	z-index: 990;
+	position: relative;
+	text-align: right;
+}
+
+nav { 
+	position:relative;
+	padding: 0;
+	float: right;
+}
+
+.sf-menu ul { 
+	position:absolute; 
+	top:-999px; 
+	display:none; 
+	font: 300 16px/22px 'Ubuntu', sans-serif;
+}
+
+.sf-menu>li {
+	display: inline-block;
+	position: relative;
+	float: left;
+	text-transform: uppercase;
+	padding: 74px 0 0 0;
+	margin: 0;
+}
+.sf-menu>li+li {
+	margin-left: 26px;
+}
+.sf-menu>li>ul>li {
+  float: none;
+  position: static;
+}
+
+.sf-menu>li>a{
+	display: inline-block;
+	text-align: right;
+	position: relative;
+	color: #3b3737;
+	padding: 0 9px;
+	font: 400 12px/30px 'Ubuntu', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2.5px;
+}
+
+.sf-menu>li>a:after {
+	position: absolute;
+	content: "";
+	background: #eb6654;
+	height: 8px;
+	top: 1px;	
+}
+.sf-menu>li>a:hover:after {
+	position: absolute;
+	content: "";
+	background: #eb6654;
+	height: 8px;
+	top: -74px;
+	left: 0;
+	width: 100%;
+	color: #eb6654;
+}
+
+ .sf-menu>li.current>a:after {
+ 	position: absolute;
+	content: "";
+	background: #eb6654;
+	height: 8px;
+	top: -74px;
+	left: 0;
+	width: 100%;
+	color: #eb6654;
+ }
+
+.sf-menu>li>a:hover,
+.sf-menu>li.current>a {
+	position: relative;
+	text-decoration: none;
+	color: #eb6654;
+}
+
+
+.sf-menu>li.current:after{
+	position: absolute;
+	content: "";
+	background: #eb6654;
+	height: 8px;
+	top: -74px;
+	left: 0;
+	width: 100%;
+}
+
+
+.sf-menu>li>ul>li>a.sf-with-ul:after {
+	content: '';
+	position: absolute;
+	display: none;
+	width: 7px;
+	height: 6px;
+	right: 20px;
+	bottom: 11px;
+	pointer-events: none;
+	z-index: 999;
+}
+
+.sf-with-ul:after {
+	background-position: 0 bottom;
+}
+
+/*================================>> 2 Level <<========================================*/
+
+.sf-menu li ul,
+.sf-menu li >ul{
+	position: absolute;
+	z-index: 999;
+	top: 162px;
+	left: 78px;
+	padding: 28px 0 35px;
+	background-color: #eb6654;
+	width: 200px;
+}
+.sf-menu li ul li{
+	position: relative;
+	text-align: left;
+	float: none !important;
+	text-transform: uppercase;
+	padding: 0px 17px 0px 17px;
+	margin-bottom: 4px;
+}
+
+.sf-menu li ul li a{
+	position: relative;
+	z-index: 999;
+	display: inline;
+	color: #fff;
+	font: 400 12px/30px 'Ubuntu', sans-serif;
+	text-decoration: none;
+	letter-spacing: 2.5px;
+	padding-right: 5px;
+	padding-left: 5px;
+
+}
+
+.sf-menu>li>ul>li>a.sf-with-ul:after {
+	position: absolute;
+	content: '';
+	left: 153px;
+	width: 7px;
+	background: url(../images/arrow-menu.png) 0 0px no-repeat;
+	height: 6px;
+	top: 3px;
+	pointer-events: none;
+	z-index: 999;
+	display: block;
+}
+
+
+.sf-menu li li a:hover, 
+.sf-menu li li >a {  
+	text-decoration: none;
+	color: #f2a89e;
+}
+
+/*================================>> 3 Level <<========================================*/
+
+.sf-menu li ul li ul{
+	position: absolute;
+	left: 201px;
+	top: -8px;
+	padding: 10px;
+	width: 150px;
+}
+
+.sf-menu li ul li ul li a {
+	color: #fff;
+}
+
+.sf-menu li ul li a:hover {
+	text-decoration: none;
+	color: #3b3737;
+}
+
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+
+@media only screen and (max-width: 1199px) {
+	
+
+}
+
+@media only screen and (max-width: 995px) {
+	
+	.sf-menu li ul, .sf-menu li.sfHover > ul {left: 0;}
+	.sf-menu>li+li {
+		margin-left: 1px;
+	}
+
+	.sf-menu > li {
+
+	}
+
+	.sf-menu > li > a {
+		letter-spacing: 1px;
+		padding: 0 8px;
+	}
+
+
+
+}
+
+@media only screen and (max-width: 767px) {
+	.menu_block {
+		float: none !important;
+		padding: 20px 10px 25px !important;
+		clear: both;
+		min-height: 0px;
+  		border: none;
+  		width: auto;
+	}
+
+  	header nav{
+  		border: none !important;
+		float:none !important;
+		font:12px/15px Arial, Helvetica, sans-serif;
+		text-transform:uppercase;
+		color:#927c67;
+		margin: 0 auto;
+		width: 100%;
+	}	
+
+  	header nav ul {
+  		border: none;
+    }
+
+	.sf-menu{display:none !important; float: none;}
+
+	#mm0{
+		font:12px/15px Arial, Helvetica, sans-serif;
+		background: #eb6654;
+		color:#fff;
+		width:100%;
+		margin: 12px auto;
+		float: none;
+        outline: none;
+		border:1px solid #ccc;
+		text-transform: uppercase;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+
+	#mm0 {margin-top: 19px;}
+}

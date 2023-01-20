@@ -1,0 +1,8 @@
+
+.circle { behavior:url(js/PIE.htc); position: relative; }
+
+#form .invalid .error-message, #form .empty .empty-message { display: block; }
+
+#form .error-message, #form .empty-message { display: none; }
+
+#form input {padding: 12px; height: 41px;}

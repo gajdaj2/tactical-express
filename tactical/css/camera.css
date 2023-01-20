@@ -1,0 +1,307 @@
+/**************************
+*
+*	GENERAL
+*
+**************************/
+
+.slider_wrapper {
+	background: #2f2c2c;
+	position: relative;
+	width: 100%;
+}
+
+.camera_target_content {
+	overflow: visible !important;
+}
+
+.camera_wrap {
+	display: none;
+	position: relative;
+	overflow: visible !important;
+	z-index: 0;
+	margin: 0;
+}
+ 
+.camera_wrap img {
+	max-width: 10000px;
+}
+
+.camera_fakehover {
+	height: 100%;
+	min-height: 60px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+
+.camera_src {
+	display: none;
+}
+
+
+.camera_caption {
+	position: relative;
+	overflow: hidden;
+	margin: 182px auto 0;
+	width: 1170px;
+}
+
+.cameraCont, .cameraContents {
+	height: 100%;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+
+.cameraSlide {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+.cameraContent {
+	bottom: 0;
+	display: none;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+.camera_target {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+.camera_overlayer {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+.camera_target_content {
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+}
+
+.camera_target_content .camera_link {
+    background: url(../images/blank.gif);
+	display: block;
+	height: 100%;
+	text-decoration: none;
+}
+
+.camera_loader {
+    background: #fff url(../images/camera-loader.gif) no-repeat center;
+	background: rgba(255, 255, 255, 0.9) url(../images/camera-loader.gif) no-repeat center;
+	border: 1px solid #ffffff;
+	border-radius: 18px;
+	height: 36px;
+	left: 48%;
+	overflow: hidden;
+	position: absolute;
+	margin: 0 0 18px 0;
+	top: 10%;
+	width: 36px;
+	z-index: 3;
+}
+
+.camera_nav_cont {
+	height: 65px;
+	overflow: hidden;
+	position: absolute;
+	right: 9px;
+	top: 15px;
+	width: 120px;
+	z-index: 4;
+}
+
+.camerarelative {
+	overflow: hidden;
+	position: relative;
+}
+
+.camera_commands > .camera_stop {
+	display: none;	
+}
+
+.camera_clear {
+	display: block;
+	clear: both;
+}
+
+.showIt {
+	display: none;
+}
+
+.camera_clear {
+	clear: both;
+	display: block;
+	height: 1px;
+	margin: -1px 0 25px;
+	position: relative;
+}
+
+.camera_wrap .camera_pag .camera_pag_ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-align: left;
+    bottom: 127px;
+    width: 100%;
+}
+
+.camera_wrap .camera_pag .camera_pag_ul li {
+	cursor: pointer;
+	display: inline-block;
+	height: 2px;
+	margin-right: 2px;
+	position: relative;
+	text-align: left;
+	left: 40px;
+	text-indent: -9999px;
+	width: 84px;
+}
+
+.camera_wrap .camera_pag .camera_pag_ul li > span {
+	background: #494646;
+	height: 2px;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 84px;
+}
+
+.camera_wrap .camera_pag .camera_pag_ul li.cameracurrent > span, .camera_wrap .camera_pag .camera_pag_ul li:hover > span {
+	background: #eb6654;
+
+	transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+}
+
+.camera_pag_ul li img {
+	display: none;
+	position: absolute;
+}
+
+.camera_pag_ul .thumb_arrow {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid;
+	top: 0;
+	left: 50%;
+	margin-left: -4px;
+	position: absolute;
+}
+
+.title {
+	font: 500 90px/70px 'Ubuntu', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	margin-left: -3px;
+}
+.title1 {
+	font: 300 24px/30px 'Ubuntu', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	margin-top: 16px;
+	margin-left: -1px;
+}
+
+a.link {
+	background: url(../images/arrow-big.png) 100% 6px no-repeat;
+	position: relative;
+	display: inline-block;
+	font: 500 18px/22px 'Ubuntu', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 32px;
+	padding-right: 19px;
+}
+
+a.link:hover {
+	color: #eb6654;
+	background: url(../images/arrow-big2.png) 100% 6px no-repeat;
+}
+
+/* =====================Responsive=====================*/
+
+@media only screen and (max-width: 1499px) {
+	
+	.camera_caption {margin-top: 100px;}
+
+	.title { font-size: 100px; line-height: 75px; } 
+	.title1 { font-size: 45px; line-height: 30px; }
+	
+}
+
+@media only screen and (max-width: 1199px) {
+	
+	.camera_caption {text-align: center; margin-top: 152px; width: 100%;}
+
+	.title { font-size: 60px; line-height: 50px; } 
+	.title1 { font-size: 30px; line-height: 30px;margin-top: 16px; }
+
+	a.link {margin-top: 26px;}
+
+	.camera_wrap .camera_pag .camera_pag_ul {bottom: 35px; text-align: center;}
+	.camera_wrap .camera_pag .camera_pag_ul li {left: 0;}
+
+}
+
+
+@media only screen and (max-width: 959px) {
+	
+	.camera_caption {text-align: center; margin-top: 126px; width: 100%;}
+
+	.title { font-size: 60px; line-height: 45px; } 
+	.title > br { display: none; } 
+	.title1 { font-size: 30px; line-height: 30px; }
+
+	a.link {margin-top: 15px; padding: 0 17px; }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+	.camera_caption {text-align: center; margin-top: 70px; width: 100%;}
+
+	.title { font-size: 26px; line-height: 20px; } 
+	.title1 { font-size: 20px; line-height: 18px; margin-top: 8px; }
+
+	a.link {margin-top: 10px; padding: 0 17px;}
+
+	.camera_wrap .camera_pag .camera_pag_ul li, .camera_wrap .camera_pag .camera_pag_ul li > span {margin-left: 2px; width: 100px;}
+
+}
+
+@media only screen and (max-width: 480px) {
+	
+	.camera_caption {visibility: hidden;}
+	.camera_wrap .camera_pag .camera_pag_ul li, .camera_wrap .camera_pag .camera_pag_ul li > span { width: 50px;}
+}

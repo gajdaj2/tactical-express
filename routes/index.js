@@ -22,6 +22,7 @@ module.exports = () =>{
     router.use('/piro',piro());
     router.use('/services',services());
     router.use('/ma',ma());
+    
     return router;
 
 };
